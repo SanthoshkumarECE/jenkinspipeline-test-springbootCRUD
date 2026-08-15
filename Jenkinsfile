@@ -27,7 +27,7 @@ pipeline {
                         variable: 'DockerPwd'
                     )
                 ]) {
-                    bat 'echo %DockerPwd% | docker login -u sandy1602 --password-stdin'
+                    bat 'docker login -u sandy1602 -p %DockerPwd%'
                     bat 'docker push sandy1602/student-crud:latest'
                 }
             }
