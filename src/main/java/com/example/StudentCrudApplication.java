@@ -8,5 +8,6 @@ public class StudentCrudApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(StudentCrudApplication.class, args);
+        System.out.println("Testing Jenkins automatic trigger");
     }
 }
